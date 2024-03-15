@@ -1,0 +1,10 @@
+.copyCode:hover~.codeCopied {
+    display: block !important;
+}
+
+.customDiv {
+    border-top: 1px solid var(--lightblue-200);
+    position: fixed;
+    top: 64px;
+    right: 5%;
+}

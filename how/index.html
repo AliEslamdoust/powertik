@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Powertik Framework</title>
+  <link rel="stylesheet" href="../styles/how.css" />
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../FontAwesome.Pro.6.4.2/FontAwesome/css/all.css">
+</head>
+
+<body>
+  <div
+    class="h-65 w-[100%] flex align-center justify-between px-[5%] fixed top-0 left-0 z-999 border-b-[1px_solid_$purple-00] dark:border-b-[1px_solid_$purple-800] bg-color-[rgba(0,0,0,.2)] dark:bg-color-[rgba(255,255,255,.2)] blur-50"
+    id="header">
+    <div class="logo">
+      <h1>
+        <a href="../" class="decoration-none dark:text-black text-white capital">Powertik</a>
+      </h1>
+    </div>
+    <ul class="style-none h-[100%] flex align-center" id="headerMenu">
+      <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+        <a href="../"
+          class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">home</a>
+      </li>
+      <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+        <a href="../install/"
+          class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">installation</a>
+      </li>
+      <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+        <a href="../articles/"
+          class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">articles</a>
+      </li>
+      <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+        <a href="#" class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">help
+          center</a>
+      </li>
+      <li
+        class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] dark:text-black text-white flex align-center px-16 pointer capital"
+        id="darkModeBtn">
+        light mode
+      </li>
+    </ul>
+  </div>
+  <div
+    class="w-[100%] pt-65 h-max flex relative wrap bg-color-[$powertik-1] dark:bg-color-[$combination0-2] transition-[all_.25s_ease]"
+    id="installLink">
+    <div class="w-[30%] h-max flex flex-col px-20 py-50 sticky top-65">
+      <div class="flex flex-col row-gap-30 pl-20 fos-18">
+        <h3 class="bold color-[$purple-00] dark:color-[$purple-800] ml-[-15px] fos-24">
+          How to.. ?
+        </h3>
+        <span
+          class="howBtn pointer text-white hover:color-[$purple-00] hover:decoration-underline dark:color-[$blue-800] dark:hover:color-[$purple-800] transition-[all_.25s_ease] w-max">How
+          to use Dark Mode?</span>
+        <span
+          class="howBtn pointer text-white hover:color-[$purple-00] hover:decoration-underline dark:color-[$blue-800] dark:hover:color-[$purple-800] transition-[all_.25s_ease] w-max">How
+          to add custom css classes?</span>
+        <span
+          class="howBtn pointer text-white hover:color-[$purple-00] hover:decoration-underline dark:color-[$blue-800] dark:hover:color-[$purple-800] transition-[all_.25s_ease] w-max">How
+          to use gradient backgrounds?</span>
+        <span
+          class="howBtn pointer text-white hover:color-[$purple-00] hover:decoration-underline dark:color-[$blue-800] dark:hover:color-[$purple-800] transition-[all_.25s_ease] w-max">How
+          to add hover on elements?</span>
+      </div>
+    </div>
+    <div
+      class="w-[70%] px-20 pb-50 dark:color-[$blue-800] color-[$combination0-2] border-l-[1px_solid_$purple-00] dark:border-l-[1px_solid_$purple-800] transition-[all_.25s_ease]">
+      <div class="flex w-[100%] justify-between mb-50 howLink pt-50">
+        <div class="color-[$combination0-2] dark:color-[$blue-800] pb-50 w-[49%]">
+          <h3>How to use Dark Mode:</h3>
+          <p class="mt-20 line-32">Writing Dark mode class is simple, write "dark:" + your class like this: <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;dark:{class} <br>
+            and add a button to toggle between dark mode and light mode: <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;< button id="darkModeBtn"> dark mode < / button> <br>
+                then add this code to your javascript file:</p>
+        </div>
+        <div class="w-[49%] h-max flex flex-col mt-50">
+          <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+            <p class="h-[100%] flex align-center pl-10 grow-1">javascript</p>
+            <span
+              class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+            <span class=" absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+          </div>
+          <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+            <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">let allDarkModes = document.querySelectorAll("[class*='dark:']");
+let darkModeBtn = document.getElementById("darkModeBtn");
+let darkMode = false;
+darkModeBtn.addEventListener("click", activateDarkMode);
+function activateDarkMode() {
+  darkMode = darkMode ? false : true;
+  allDarkModes.forEach((elem) => {
+    darkMode
+      ? (elem.className = elem.className.replaceAll("dark:", "pt-dark-"))
+      : (elem.className = elem.className.replaceAll("pt-dark-", "dark:"));
+  });
+}
+</pre>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-[100%] justify-between mb-50 border-t-[1px_solid_$lightblue-00] pt-50 howLink">
+        <div class="color-[$combination0-2] dark:color-[$blue-800] pb-50 w-[49%]">
+          <h3>How to add custom css classes:</h3>
+          <p class="mt-20 line-32">You can add css shortcuts in "powertik-files.js" in this format: <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;["className","property","property value"], <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;["blue","color","#0000FF"], <br>
+          </p>
+        </div>
+        <div class="w-[49%] h-max flex flex-col mt-50">
+          <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+            <p class="h-[100%] flex align-center pl-10 grow-1">powertik-files.js</p>
+            <span
+              class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+          <span class=" absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+          </div>
+          <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+            <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">
+            const custom_shortcuts = [
+    ["blue","color","#0000FF"],
+]
+</pre>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-[100%] justify-between mb-50 border-t-[1px_solid_$lightblue-00] pt-50 howLink">
+        <div class="color-[$combination0-2] dark:color-[$blue-800] pb-50 w-[49%]">
+          <h3>How to use gradient backgrounds:</h3>
+          <p class="mt-20 line-32">You can use gradient like this: <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;gradient-[0deg,$purple-00_50%,blue_50%] <br>
+          </p>
+        </div>
+        <div class="w-[49%] h-max flex flex-col mt-50">
+          <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+            <p class="h-[100%] flex align-center pl-10 grow-1">html</p>
+            <span
+              class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+          <span class=" absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+          </div>
+          <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+            <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">
+            class = "gradient-[90deg,$lightblue-200,$purple-00]"
+</pre>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-[100%] justify-between mb-50 border-t-[1px_solid_$lightblue-00] pt-50 howLink">
+        <div class="color-[$combination0-2] dark:color-[$blue-800] pb-50 w-[49%]">
+          <h3>How to add hover on elements:</h3>
+          <p class="mt-20 line-32">You can add hover effect on elements using "hover:" like this:<br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;hover:{class} <br>
+            &nbsp;&nbsp;-&nbsp;&nbsp;hover:color-[$lightblue-200] <br>
+          </p>
+        </div>
+        <div class="w-[49%] h-max flex flex-col mt-50">
+          <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+            <p class="h-[100%] flex align-center pl-10 grow-1">html</p>
+            <span
+              class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+          <span class=" absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+          </div>
+          <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+            <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">
+            class = "hover:color-[$lightblue-200]"
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div
+    class="w-[100%]h-max transition-[all_.25s_ease] flex align-stretch justify-between border-t-[1px_solid_$purple-00] dark:border-t-[1px_solid_$purple-800] bg-color-[$powertik-1] dark:bg-color-[$combination0-2] py-50">
+    <div class="w-[50%] flex flex-col px-30 row-gap-15">
+      <a href="#"
+        class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">Social
+        media</a>
+      <a href="#"
+        class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">Contact
+        us</a>
+      <a href="#"
+        class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">More
+        about Powertik</a>
+      <a href="#"
+        class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">More
+        about us</a>
+    </div>
+    <div class="w-[50%] flex align-end justify-end px-50">
+      <p class="color-[$combination0-2] dark:color-[$blue-800] transition-[all_.25s_ease]">
+        All rights reserved |&nbsp;<a href="../"
+          class="color-[$lightblue-00] bold hover:decoration-underline decoration-none">Powertik</a>&nbsp;&copy;&nbsp;2024
+      </p>
+    </div>
+  </div>
+  <script src="../scripts/all.js"></script>
+  <script src="../scripts/how.js"></script>
+</body>
+
+</html>

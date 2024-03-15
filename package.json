@@ -1,0 +1,15 @@
+{
+  "name": "xproject---powertik-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "powertik": "node watch-pt.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  }
+}

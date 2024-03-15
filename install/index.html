@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Powertik Framework</title>
+    <link rel="stylesheet" href="../styles/install.css" />
+    <link rel="stylesheet" href="../styles/custom.css" />
+    <link rel="stylesheet" href="../FontAwesome.Pro.6.4.2/FontAwesome/css/all.css">
+  </head>
+  <body>
+    <div
+      class="h-65 w-[100%] flex align-center justify-between px-[5%] fixed top-0 left-0 z-999 border-b-[1px_solid_$purple-00] dark:border-b-[1px_solid_$purple-800] bg-color-[rgba(0,0,0,.2)] dark:bg-color-[rgba(255,255,255,.2)] blur-50"
+      id="header">
+      <div class="logo">
+        <h1>
+          <a href="../" class="decoration-none dark:text-black text-white capital">Powertik</a>
+        </h1>
+      </div>
+      <ul class="style-none h-[100%] flex align-center" id="headerMenu">
+        <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+          <a href="../"
+            class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">home</a>
+        </li>
+        <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+          <a href="#"
+            class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">installation</a>
+        </li>
+        <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+          <a href="../articles/"
+            class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">articles</a>
+        </li>
+        <li class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] pointer">
+          <a href="../how/" class="dark:text-black text-white decoration-none capital flex align-center px-16 h-[100%]">help
+            center</a>
+        </li>
+        <li
+          class="hover:bg-color-[$lightblue-800] dark:hover:bg-color-[$lightblue-200] h-[100%] dark:text-black text-white flex align-center px-16 pointer capital"
+          id="darkModeBtn">
+          light mode
+        </li>
+      </ul>
+    </div>
+    <div class="w-[100%] pt-65 h-max flex relative wrap bg-color-[$powertik-1] dark:bg-color-[$combination0-2] transition-[all_.25s_ease]" id="installLink">
+      <div class="w-[100%] pl-20 pr-[10%] py-50 dark:color-[$blue-800] color-[$combination0-2] border-x-[1px_solid_$purple-00] dark:border-l-[1px_solid_$purple-800] transition-[all_.25s_ease]">
+        <div class="flex flex-col w-[100%] row-gap-60 pt-40">
+
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>1. install chokidar using the command "npm i chokidar"</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+                <p class="h-[100%] flex align-center pl-10 grow-1">terminal</p>
+                <span class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+                <span class="absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+              </div>
+              <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+                <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">npm i chokidar</pre>
+            </div>
+          </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>
+                2. downlload all the necessary files from&nbsp;<a
+                target="_blank"
+                href="./powertik.zip"
+                class="decoration-underline color-[$purple-00] dark:color-[$purple-800] transition-[all_.25s_ease]"
+                >here</a
+              ></p>
+            </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>3. place all the files inside the zip next to index.html (in the main
+                directory)</p>
+            </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>
+                4. add this to package.json:</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+                <p class="h-[100%] flex align-center pl-10 grow-1">package.json</p>
+                <span class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+                <span class="absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+              </div>
+              <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]"><pre class="pre-wrap w-max max-w-[100%] h-max mainCode">"scripts": {
+ "powertik": "node watch-pt.js"
+},
+</pre>
+            </div>
+          </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>5. correct the urls inside: powertik-files.js</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+                <p class="h-[100%] flex align-center pl-10 grow-1">powertik-files.js</p>
+                <span class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+                <span class="absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+              </div>
+              <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+                <pre>const css = "./styles/main.css";
+const index = "./index.html";</pre>
+            </div>
+          </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>6. run powertik framework by runing this command in your terminal:</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+                <p class="h-[100%] flex align-center pl-10 grow-1">terminal</p>
+                <span class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+                <span class="absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+              </div>
+              <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+                <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">npm run powertik</pre>
+            </div>
+          </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>7. now you can link main.css to your html file</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <div class="radius-tl-5 radius-tr-5 py-5 h-32 border-[1px_solid_$purple-00] bg-color-[$powertik-2] flex w-[100%] h-[100%] relative text-white">
+                <p class="h-[100%] flex align-center pl-10 grow-1">index.html</p>
+                <span class="copyCode fas fa-copy h-[100%] d-[flex!] justify-center align-center mr-10 pointer hover:color-[$purple-00] transition-[all_.25s_ease]""></span>
+                <span class="absolute bottom-[calc(100%_-_3px)] bg-color-[$powertik-2] right-5 z-1000 border-[1px_solid_$purple-00] radius-5 p-5 none codeCopied">copy</span>
+              </div>
+              <div class="bg-color-[$powertik-2] p-10 fos-16 line-32 color-[$purple-00] flow-auto max-h-300 radius-br-5 radius-bl-5 border-[1px_solid_$purple-00] border-t-[none] min-h-200 w-[100%]">
+                <pre class="pre-wrap w-max max-w-[100%] h-max mainCode">< link rel="stylesheet" href="./styles/main.css" /></pre>
+            </div>
+          </div>
+          </div>
+          <div class="flex w-[100%] align-stretch">
+            <div class="w-[70%]">
+              <p>7. now you can link main.css to your html file</p>
+            </div>
+            <div class="w-[30%] h-max flex flex-col">
+              <img src="../media/installation.PNG" alt="" class="max-w-[95%] min-w-[50%] block mx-auto radius-5 border-[1px_solid_$purple-00]">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-[100%]h-max transition-[all_.25s_ease] flex align-stretch justify-between border-t-[1px_solid_$purple-00] dark:border-t-[1px_solid_$purple-800] bg-color-[$powertik-1] dark:bg-color-[$combination0-2] py-50">
+      <div class="w-[50%] flex flex-col px-30 row-gap-15">
+        <a href="#" class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">Social media</a>
+        <a href="#" class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">Contact us</a>
+        <a href="#" class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">More about Powertik</a>
+        <a href="#" class="decoration-none color-[$combination0-2] dark:color-[$blue-800] hover:decoration-underline w-max transition-[all_.25s_ease]">More about us</a>
+      </div>
+      <div class="w-[50%] flex align-end justify-end px-50">
+        <p class="color-[$combination0-2] dark:color-[$blue-800] transition-[all_.25s_ease]">
+          All rights reserved |&nbsp;<a href="../" class="color-[$lightblue-00] bold hover:decoration-underline decoration-none">Powertik</a>&nbsp;&copy;&nbsp;2024
+        </p>
+      </div>
+    </div>
+    <script src="../scripts/all.js"></script>
+  </body>
+</html>
