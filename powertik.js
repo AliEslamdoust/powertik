@@ -3,7 +3,6 @@ let classes = new Array(); // every elements classes
 const fs = require("fs"); // Import the fs module
 const { isString, isArray } = require("util");
 const { indexURL, cssURL, shortcuts, responsive } = require("./powertik-files");
-const { log } = require("console");
 fs.readFile(indexURL, "utf8", (err, data) => {
   // Read the file index.html
   if (err) {
